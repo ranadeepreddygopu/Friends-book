@@ -9,6 +9,8 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { LoginComponent } from './components/user/login/login.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { ManageUsersComponent } from './components/manage-users/manage-users.component';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { LoginComponent } from './components/user/login/login.component';
     RegistrationComponent,
     ResetPasswordComponent,
     NavBarComponent,
-    LoginComponent
+    LoginComponent,
+    DashboardComponent,
+    ManageUsersComponent
   ],
   imports: [
     BrowserModule,

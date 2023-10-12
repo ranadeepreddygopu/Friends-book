@@ -42,7 +42,7 @@ export class LoginComponent {
              
               this.route.navigate(["/dashboard/admin"])
             }else{
-              this.route.navigate(["/dashboard/user"])
+              this.route.navigate(["/dashboard"])
             }
            
           }else{

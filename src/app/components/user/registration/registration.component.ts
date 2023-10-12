@@ -10,6 +10,7 @@ import { AuthService } from 'src/app/services/auth.service';
 })
 export class RegistrationComponent {
   public  registrationForm: FormGroup;
+  public isregistrationform:boolean
 
   constructor(
     private formBuilder: FormBuilder,
@@ -17,13 +18,18 @@ export class RegistrationComponent {
     private router: Router
   ) {
     this.registrationForm = this.formBuilder.group({
+      firstname: ['', Validators.required],
+      lastname: ['', Validators.required],
       username: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(6)]]
     });
+    this.isregistrationform = false;
+
   }
 
   onRegisterSubmit(): void {
+    this.isregistrationform=true
     if (this.registrationForm.valid) {
       const formData = this.registrationForm.value;
       this.authService.register(formData).subscribe(
@@ -37,6 +43,9 @@ export class RegistrationComponent {
         }
       );
     }
+  }
+  get registrationFormControls(){
+    return this.registrationForm.controls; 
   }
 
 }

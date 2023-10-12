@@ -1,11 +1,22 @@
 {
   "users": [
     {
-      "username": "ranadeep",
-      "email": "rana@gmail.com",
+      "firstname": "Ranadeep ",
+      "lastname": "Gopu",
+      "username": "ranadeep777",
+      "email": "ranadeepreddy777@gmail.com",
       "password": "Aravind246$",
       "role": "user",
       "id": 1
+    },
+    {
+      "firstname": "admin",
+      "lastname": "admin",
+      "username": "admin",
+      "email": "admin@gmail.com",
+      "password": "admin123",
+      "role": "admin",
+      "id": 2
     }
   ]
 }
