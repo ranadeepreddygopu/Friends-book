@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Friends Book</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse order-1" id="navbarNav">
+        <ul class="navbar-nav ml-auto d-flex w-50 ">
+          <li class="nav-item" routerLinkActive="active" *ngIf="currentRole==='admin'">
+            <a class="nav-link" aria-current="page"  routerLink="/dashboard/admin" routerLinkActive="router-link-active" >Users</a>
+          </li>
+          <li class="nav-item"  routerLinkActive="active">
+            <a class="nav-link" routerLink="/dashboard/user">Network</a>
+          </li>
+          <li class="nav-item"  routerLinkActive="active"  *ngIf="currentRole==='admin'">
+            <a class="nav-link" routerLink="/dashboard/orders">Friends</a>
+          </li>
+        </ul>
+
+        
+      </div>
+      <div class="collapse navbar-collapse order-2" id="navbarNav">
+        <ul class="navbar-nav ml-auto ml-auto w-100 justify-content-end">
+    
+          <li class="nav-item"  routerLinkActive="active">
+            <a class="nav-link" routerLink="/login">Log out</a>
+          </li>
+        </ul>
+
+        
+      </div>
+    </div>
+  </nav>

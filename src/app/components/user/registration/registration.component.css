@@ -1,0 +1,27 @@
+.register-container{
+    height:400px;
+    width:600px;
+    margin:3%;
+    padding:5%;
+    margin-left:35%;
+
+}
+
+form label{
+    margin: 10px;
+    width: 50%;
+}
+
+input{
+    width: 50%;
+}
+
+form {
+    text-align: right;
+}
+
+.form-group{
+    display: flex;
+    flex-direction:row;
+    margin-top: 10px;
+}
