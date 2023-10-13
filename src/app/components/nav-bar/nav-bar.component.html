@@ -27,7 +27,9 @@
       </div>
       <div class="collapse navbar-collapse order-2" id="navbarNav">
         <ul class="navbar-nav ml-auto ml-auto w-100 justify-content-end">
-    
+          <li class="nav-item"  routerLinkActive="active">
+            <a routerLink="/dashboard/settings" class="nav-link bi bi-person">Welcome {{profilename}}</a>
+          </li>
           <li class="nav-item"  routerLinkActive="active">
             <a class="nav-link" routerLink="/login">Log out</a>
           </li>

@@ -24,6 +24,10 @@ export class AdminService {
    public updatepassword(userData:IUserDetails,id:number):Observable<IUserDetails>{
     return  this.http.patch<IUserDetails>(`http://localhost:3000/users/${id}`,{"password" :userData["password"]})
    }
+   public uploadProfile(filename:any,id:number):Observable<any>{
+    return  this.http.patch<any>(`http://localhost:3000/users/${id}`,{"profilepicture":'assets/images/'+filename})
+   }
+
 
    public deleteUser(id:number):Observable<any>{
     return  this.http.delete<any>(`http://localhost:3000/users/${id}`)

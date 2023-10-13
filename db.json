@@ -15,7 +15,8 @@
       "email": "rana@gmail.com",
       "password": "ranadeepreddy",
       "role": "user",
-      "id": 3
+      "id": 3,
+      "profilepicture": "assets/images/IMG_0407.JPG"
     }
   ]
 }

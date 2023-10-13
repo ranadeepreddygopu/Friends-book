@@ -5,6 +5,7 @@ import { LoginComponent } from './components/user/login/login.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ManageUsersComponent } from './components/manage-users/manage-users.component';
 import { ForgotPasswordComponent } from './components/user/forgot-password/forgot-password.component';
+import { ResetPasswordComponent } from './components/user/reset-password/reset-password.component';
 
 
 const routes: Routes = [
@@ -16,7 +17,7 @@ const routes: Routes = [
     component: DashboardComponent,
     children: [
       { path: 'admin', component: ManageUsersComponent },
-      // { path: 'user', component: ProductsComponent }
+      { path: 'settings', component: ResetPasswordComponent }
     ],
   },
   {path:'forgotpassword',component:ForgotPasswordComponent}
