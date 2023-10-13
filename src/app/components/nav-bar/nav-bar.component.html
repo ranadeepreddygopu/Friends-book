@@ -10,10 +10,16 @@
             <a class="nav-link" aria-current="page"  routerLink="/dashboard/admin" routerLinkActive="router-link-active" >Users</a>
           </li>
           <li class="nav-item"  routerLinkActive="active">
+            <a class="nav-link" routerLink="/dashboard/user">Home</a>
+          </li>
+          <li class="nav-item"  routerLinkActive="active">
             <a class="nav-link" routerLink="/dashboard/user">Network</a>
           </li>
-          <li class="nav-item"  routerLinkActive="active"  *ngIf="currentRole==='admin'">
+          <li class="nav-item"  routerLinkActive="active">
             <a class="nav-link" routerLink="/dashboard/orders">Friends</a>
+          </li>
+          <li class="nav-item"  routerLinkActive="active">
+            <a class="nav-link" routerLink="/dashboard/orders">Settings</a>
           </li>
         </ul>
 

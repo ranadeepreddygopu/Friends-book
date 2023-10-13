@@ -15,4 +15,7 @@ export class AuthService {
     userData.role ='user'
     return this.http.post(`${this.apiUrl}`, userData);
   }
+  public forgetpassword() {
+    return this.http.get(`${this.apiUrl}`);
+  }
 }

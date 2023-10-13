@@ -35,6 +35,7 @@ export class RegistrationComponent {
       this.authService.register(formData).subscribe(
         () => {
           // Redirect to login page or another appropriate route after successful registration
+          alert('Registration Successful')
           this.router.navigate(['/login']);
         },
         (error:any) => {

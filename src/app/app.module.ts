@@ -11,6 +11,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { LoginComponent } from './components/user/login/login.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ManageUsersComponent } from './components/manage-users/manage-users.component';
+import { ForgotPasswordComponent } from './components/user/forgot-password/forgot-password.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { ManageUsersComponent } from './components/manage-users/manage-users.com
     NavBarComponent,
     LoginComponent,
     DashboardComponent,
-    ManageUsersComponent
+    ManageUsersComponent,
+    ForgotPasswordComponent
   ],
   imports: [
     BrowserModule,

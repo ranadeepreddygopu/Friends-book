@@ -1,22 +1,21 @@
 {
   "users": [
     {
-      "firstname": "Ranadeep ",
-      "lastname": "Gopu",
-      "username": "ranadeep777",
-      "email": "ranadeepreddy777@gmail.com",
-      "password": "Aravind246$",
-      "role": "user",
+      "password": "ranadeep123",
       "id": 1
     },
     {
-      "firstname": "admin",
-      "lastname": "admin",
-      "username": "admin",
-      "email": "admin@gmail.com",
-      "password": "admin123",
-      "role": "admin",
+      "password": "ranadeep246",
       "id": 2
+    },
+    {
+      "firstname": "rana",
+      "lastname": "rana",
+      "username": "rana777",
+      "email": "rana@gmail.com",
+      "password": "ranadeepreddy",
+      "role": "user",
+      "id": 3
     }
   ]
 }

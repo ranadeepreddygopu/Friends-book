@@ -4,10 +4,11 @@ import { RegistrationComponent } from './components/user/registration/registrati
 import { LoginComponent } from './components/user/login/login.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ManageUsersComponent } from './components/manage-users/manage-users.component';
+import { ForgotPasswordComponent } from './components/user/forgot-password/forgot-password.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: '/register', pathMatch: 'full' }, // Redirect to login by default
+  { path: '', redirectTo: '/login', pathMatch: 'full' }, // Redirect to login by default
   { path: 'register', component: RegistrationComponent },
   { path: 'login', component: LoginComponent },
   {
@@ -18,6 +19,7 @@ const routes: Routes = [
       // { path: 'user', component: ProductsComponent }
     ],
   },
+  {path:'forgotpassword',component:ForgotPasswordComponent}
 
 ];
 
