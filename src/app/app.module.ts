@@ -12,6 +12,7 @@ import { LoginComponent } from './components/user/login/login.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ManageUsersComponent } from './components/manage-users/manage-users.component';
 import { ForgotPasswordComponent } from './components/user/forgot-password/forgot-password.component';
+import { MustMatchDirective } from './components/directives/must-match.directive';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { ForgotPasswordComponent } from './components/user/forgot-password/forgo
     LoginComponent,
     DashboardComponent,
     ManageUsersComponent,
-    ForgotPasswordComponent
+    ForgotPasswordComponent,
+    MustMatchDirective,
   ],
   imports: [
     BrowserModule,
@@ -31,10 +33,10 @@ import { ForgotPasswordComponent } from './components/user/forgot-password/forgo
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    NgbModule
+    NgbModule,
 
   ],
-  providers: [],
+  providers: [MustMatchDirective],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

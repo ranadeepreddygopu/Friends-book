@@ -9,14 +9,15 @@
       "id": 2
     },
     {
-      "firstname": "rana",
-      "lastname": "rana",
+      "firstname": "ranadeep ",
+      "lastname": "gopu",
       "username": "rana777",
       "email": "rana@gmail.com",
-      "password": "ranadeepreddy",
+      "password": "rana123",
       "role": "user",
       "id": 3,
-      "profilepicture": "assets/images/IMG_0407.JPG"
+      "profilepicture": "assets/images/IMG_0407.JPG",
+      "confirmpassword": "rana123"
     }
   ]
 }
