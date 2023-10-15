@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { AdminService } from 'src/app/services/admin.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { IUserDetails } from 'src/app/models/user.model';
@@ -10,11 +10,12 @@ import { IUserDetails } from 'src/app/models/user.model';
   styleUrls: ['./reset-password.component.css']
 })
 export class ResetPasswordComponent {
+  @Input() hidesettings:boolean|undefined
   public currentRole: string | null
-  public profilename: string
-  public username: string
-  public lastname: string
-  public email: string
+  public profilename: String
+  public username: String
+  public lastname: String
+  public email: String
   public userid: number;
   public profilepicture: string
   public userRecords: IUserDetails[];
@@ -66,11 +67,17 @@ export class ResetPasswordComponent {
     });
   }
   public loadUsers() {
+    this.hidesettings= this.hidesettings==undefined?true:this.hidesettings
     this.adminService.getUsers().subscribe((response: any) => {
       this.userRecords = response;
       this.userRecords = this.userRecords.filter(item => item["id"] == this.userid)
+      const tempdata:any =this.userRecords
       this.userForm.patchValue({...this.userRecords[0]});
-
+      this.profilename = this.userRecords[0]["firstname"]
+      this.username = this.userRecords[0]["username"]
+      this.lastname = this.userRecords[0]["lastname"]
+      this.email = this.userRecords[0]["email"]
+      this.profilepicture = tempdata[0]["profilepicture"] == undefined ? "" : tempdata[0]["profilepicture"]
     });
   }
   onFileSelected(event: any): void {

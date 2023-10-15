@@ -2,7 +2,7 @@ export interface IUserDetails {
     firstname:String;
     lastname:String;
     email: String;
-    username?:string;
+    username:String;
     password: String;
     address: String;
     city: String;

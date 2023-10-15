@@ -1,0 +1,12 @@
+<div style="display:flex;flex-direction:row">
+    <div style="width:80%;">
+<app-reset-password [hidesettings]="false"></app-reset-password>
+</div>
+<div  style="margin-top:50px;background:white;width:20%" >
+    <span style="color: blue;font-weight:bolder; font-size:20px; margin-left:20px">Friends to connect</span>
+    <div *ngFor="let record of userRecords;let i=index;" style="margin-top: 30px; margin-left:20px">
+             <p><span style="font-size: 20px; font-weight:bolder">{{record.firstname}} {{record.lastname}}</span><button style="margin-left:10px;" class="btn btn-primary"  (click)="sendrequest(record.id)">Send</button></p>
+  
+      </div>
+</div>       
+</div>

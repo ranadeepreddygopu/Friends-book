@@ -1,14 +1,6 @@
 {
   "users": [
     {
-      "password": "ranadeep123",
-      "id": 1
-    },
-    {
-      "password": "ranadeep246",
-      "id": 2
-    },
-    {
       "firstname": "ranadeep ",
       "lastname": "gopu",
       "username": "rana777",
@@ -18,6 +10,20 @@
       "id": 3,
       "profilepicture": "assets/images/IMG_0407.JPG",
       "confirmpassword": "rana123"
+    },
+    {
+      "firstname": "teja",
+      "lastname": "mandapati",
+      "username": "teja123",
+      "email": "teja@gmail.com",
+      "password": "teja123",
+      "role": "user",
+      "id": 4,
+      "profilepicture": "assets/images/IMG_0484.JPG",
+      "Requests": {
+        "status": "pending",
+        "friend": 3
+      }
     }
   ]
 }

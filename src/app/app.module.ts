@@ -13,6 +13,9 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ManageUsersComponent } from './components/manage-users/manage-users.component';
 import { ForgotPasswordComponent } from './components/user/forgot-password/forgot-password.component';
 import { MustMatchDirective } from './components/directives/must-match.directive';
+import { NetworkComponent } from './components/network/network.component';
+import { FriendsComponent } from './components/friends/friends.component';
+import { HomeComponent } from './components/home/home.component';
 
 
 @NgModule({
@@ -26,6 +29,9 @@ import { MustMatchDirective } from './components/directives/must-match.directive
     ManageUsersComponent,
     ForgotPasswordComponent,
     MustMatchDirective,
+    NetworkComponent,
+    FriendsComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

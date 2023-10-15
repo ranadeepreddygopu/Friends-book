@@ -27,7 +27,9 @@ export class AdminService {
    public uploadProfile(filename:any,id:number):Observable<any>{
     return  this.http.patch<any>(`http://localhost:3000/users/${id}`,{"profilepicture":'assets/images/'+filename})
    }
-
+   public connectfriends(data:any,id:number):Observable<any>{
+    return  this.http.patch<any>(`http://localhost:3000/users/${id}`,data)
+   }
 
    public deleteUser(id:number):Observable<any>{
     return  this.http.delete<any>(`http://localhost:3000/users/${id}`)

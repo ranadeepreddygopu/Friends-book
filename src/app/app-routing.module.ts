@@ -6,6 +6,9 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ManageUsersComponent } from './components/manage-users/manage-users.component';
 import { ForgotPasswordComponent } from './components/user/forgot-password/forgot-password.component';
 import { ResetPasswordComponent } from './components/user/reset-password/reset-password.component';
+import { FriendsComponent } from './components/friends/friends.component';
+import { NetworkComponent } from './components/network/network.component';
+import { HomeComponent } from './components/home/home.component';
 
 
 const routes: Routes = [
@@ -17,7 +20,12 @@ const routes: Routes = [
     component: DashboardComponent,
     children: [
       { path: 'admin', component: ManageUsersComponent },
-      { path: 'settings', component: ResetPasswordComponent }
+      { path: 'settings', component: ResetPasswordComponent },
+      {path:'friends',component:FriendsComponent},
+      {path:'network',component:NetworkComponent},
+      {path:'home',component:HomeComponent},
+
+
     ],
   },
   {path:'forgotpassword',component:ForgotPasswordComponent}
