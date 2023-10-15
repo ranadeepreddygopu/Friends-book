@@ -20,10 +20,22 @@
       "role": "user",
       "id": 4,
       "profilepicture": "assets/images/IMG_0484.JPG",
-      "Requests": {
-        "status": "pending",
-        "friend": 3
-      }
+      "Requests": [
+        {
+          "status": "pending",
+          "friend": 3
+        }
+      ]
+    },
+    {
+      "firstname": "Raja",
+      "lastname": "Munagala",
+      "username": "raja777",
+      "email": "raja@gmail.com",
+      "password": "Aravind246$",
+      "role": "user",
+      "id": 5,
+      "profilepicture": "assets/images/IMG_0484.JPG"
     }
   ]
 }
